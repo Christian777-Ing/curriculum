@@ -1,103 +1,324 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Curriculum - Christian Erick Zavala Araujo </title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="Keywords" content="Curriculum, CV, Fullstack, experiencia laboral, educación">
-    <meta name="description" content="Curriculum de Christian Zavala, estudiante de computación de ESPOL">
+    <title>Curriculum - Christian Erick Zavala Araujo</title>
+
+    <meta name="keywords"
+        content="Curriculum, CV, Fullstack, Backend, Frontend, Java, Python, MySQL, Machine Learning">
+    <meta name="description"
+        content="Curriculum profesional de Christian Erick Zavala Araujo, estudiante de Ingeniería en Sistemas de ESPOL.">
     <meta name="author" content="Christian Erick Zavala Araujo">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
+            background-color: #eef2f7;
             color: #333;
+            line-height: 1.7;
         }
 
         header {
-            background-color: #1f3c88;
+            background: linear-gradient(135deg, #163172, #2952cc);
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header h3 {
+            font-weight: normal;
+            margin-bottom: 20px;
+            color: #dce6ff;
+        }
+
+        header p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        .contact-header {
+            margin-top: 20px;
+        }
+
+        .contact-header p {
+            margin: 5px 0;
         }
 
         nav {
-            background-color: #163172;
-            padding: 10px;
+            background-color: #10285f;
             text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
+            margin: 0 18px;
             font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a8c6ff;
         }
 
         main {
-            width: 80%;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
+            width: 85%;
+            max-width: 1050px;
+            margin: 30px auto;
         }
 
         section {
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            margin: 0;
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
 
         h2 {
-            color: #1f3c88;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
+            color: #163172;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #dce6ff;
+            padding-bottom: 10px;
         }
 
-        footer {
-            background-color: #1f3c88;
-            color: white;
-            text-align: center;
-            padding: 15px;
+        h3 {
+            color: #2952cc;
             margin-top: 20px;
+        }
+
+        p {
+            margin-top: 10px;
         }
 
         ul {
             padding-left: 20px;
         }
 
+        li {
+            margin-bottom: 12px;
+        }
+
+        strong {
+            color: #163172;
+        }
+
+        a {
+            color: #2952cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .skill {
+            background-color: #dce6ff;
+            color: #163172;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #163172;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            main {
+                width: 92%;
+            }
+        }
     </style>
 
 </head>
 
 <body>
+
     <header>
-         <h1>Curriculum - Christian Zavala</h1>
-         <p>
+        <h1>Christian Erick Zavala Araujo</h1>
+
+        <p>
             Estudiante de Ingeniería en Sistemas con experiencia en desarrollo backend,
-            frontend y administración de bases de datos.
+            frontend y administración de bases de datos. 
         </p>
     </header>
 
     <nav>
         <a href="#perfil">Perfil</a>
-        <a href="#experiencias">Experiencia</a>
+        <a href="#experiencia">Experiencia</a>
         <a href="#educacion">Educación</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#contacto">Contacto</a>
-        
     </nav>
-   <main>
-        
-   </main>
-</body>
 
+    <main>
+
+        <section id="perfil">
+           <h2>Perfil Profesional</h2>
+
+            <p>
+                Futuro ingeniero en sistemas con gran interés por el desarrollo de software,
+                la ciberseguridad, inteligencia artificial y gestión de proyectos tecnológicos.
+                Me caracterizo por mi compromiso, organización, creatividad y capacidad
+                para trabajar en equipo.
+            </p>
+
+            <p>
+                Busco fortalecer constantemente mis habilidades técnicas y personales
+                mediante el desarrollo de proyectos innovadores que generen impacto
+                y aporten soluciones eficientes.
+            </p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia Profesional</h2>
+
+            <h3>Agenda de Contactos - JavaFX</h3>
+
+            <p>
+                Desarrollo de una aplicación de escritorio para la gestión dinámica
+                de contactos personales y empresariales utilizando JavaFX.
+                Implementación de programación orientada a objetos, listas dinámicas,
+                persistencia de datos y filtros de búsqueda.
+            </p>
+
+            <h3>Sistema de Gestión de Retiros</h3>
+
+            <p>
+                Diseño e implementación de un sistema basado en MySQL para la administración
+                de clientes, pagos y reservas. Aplicación de principios de normalización,
+                integridad referencial y optimización de consultas SQL.
+            </p>
+
+            <h3>Simulador Bancario</h3>
+
+            <p>
+                Desarrollo de una aplicación backend basada en arquitectura MVC
+                para simular operaciones bancarias como depósitos, retiros,
+                transferencias y consultas de saldo.
+                Implementación de persistencia de datos con MySQL,
+                validaciones y lógica de negocio orientada a seguridad y escalabilidad.
+            </p>
+
+            <h3>Modelos Predictivos IA</h3>
+
+            <p>
+                Proyecto desarrollado durante Samsung Innovation Campus enfocado
+                en Machine Learning y análisis de datos.
+                Realización de limpieza, transformación y procesamiento de información
+                para entrenar modelos predictivos e identificar patrones mediante IA.
+            </p>
+
+        </section>
+
+        <section id="educacion">
+            <h2>Educación</h2>
+
+            <ul>
+
+                <li>
+                    <strong>Ingeniería en Sistemas</strong><br>
+                    Escuela Superior Politécnica del Litoral (ESPOL)
+                </li>
+
+                <li>
+                    <strong>Certificación en Python e Inteligencia Artificial</strong><br>
+                    Samsung Innovation Campus
+                </li>
+
+                <li>
+                    <strong>Bachiller en Ciencias</strong><br>
+                    Unidad Educativa Nueva Semilla
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section id="habilidades">
+             <h2>Habilidades</h2>
+
+            <div class="skills-container">
+
+                <div class="skill">Backend</div>
+                <div class="skill">Frontend</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Java</div>
+                <div class="skill">JavaFX</div>
+                <div class="skill">Python</div>
+                <div class="skill">Machine Learning</div>
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">Trabajo en Equipo</div>
+                <div class="skill">Comunicación</div>
+                <div class="skill">Resolución de Problemas</div>
+
+            </div>
+
+
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <p><strong>Email:</strong> er.kj45@hotmail.com</p>
+            <p><strong>Teléfono:</strong> +593 968124200</p>
+            <p><strong>Ubicación:</strong> Guayaquil, Ecuador</p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/christian-zavala-araujo-12205a333" target="_blank">
+                    linkedin.com/in/christian-zavala-araujo-12205a333
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Christian Erick Zavala Araujo | Curriculum Profesional</p>
+    </footer>
+
+</body>
 
 </html>
