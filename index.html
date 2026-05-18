@@ -9,9 +9,13 @@
 
     <meta name="keywords"
         content="Curriculum, CV, Fullstack, Backend, Frontend, Java, Python, MySQL, Machine Learning">
+
     <meta name="description"
         content="Curriculum profesional de Christian Erick Zavala Araujo, estudiante de Ingeniería en Sistemas de ESPOL.">
+
     <meta name="author" content="Christian Erick Zavala Araujo">
+
+    <meta name="robots" content="index, follow">
 
     <style>
         * {
@@ -39,24 +43,10 @@
             margin-bottom: 10px;
         }
 
-        header h3 {
-            font-weight: normal;
-            margin-bottom: 20px;
-            color: #dce6ff;
-        }
-
         header p {
             max-width: 750px;
             margin: auto;
             font-size: 1.1rem;
-        }
-
-        .contact-header {
-            margin-top: 20px;
-        }
-
-        .contact-header p {
-            margin: 5px 0;
         }
 
         nav {
@@ -102,15 +92,20 @@
 
         h3 {
             color: #2952cc;
-            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        article {
+            margin-bottom: 25px;
         }
 
         p {
             margin-top: 10px;
         }
 
-        ul {
-            padding-left: 20px;
+        ul,
+        ol {
+            padding-left: 25px;
         }
 
         li {
@@ -134,6 +129,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
+            list-style: none;
             margin-top: 15px;
         }
 
@@ -143,6 +139,187 @@
             padding: 10px 16px;
             border-radius: 20px;
             font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #dce6ff;
+            color: #163172;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f9fc;
+        }
+
+        blockquote {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f1f5ff;
+            border-left: 5px solid #2952cc;
+            font-style: italic;
+        }
+
+        address {
+            font-style: normal;
+            line-height: 1.8;
+        }
+
+        .map-frame,
+        .video-frame {
+            width: 100%;
+            min-height: 320px;
+            border: none;
+            border-radius: 14px;
+            margin-top: 20px;
+        }
+
+        .video-frame {
+            min-height: 240px;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 22px;
+            margin-top: 24px;
+            padding: 28px 26px;
+            background-color: #f6f8ff;
+            border: 1px solid #dbe4f4;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(16, 39, 96, 0.08);
+        }
+
+        .contact-form p {
+            color: #475569;
+            line-height: 1.7;
+        }
+
+        .contact-form .form-row {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .contact-form .form-field {
+            display: grid;
+            gap: 8px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: 700;
+            color: #1f2d5d;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 14px;
+            font: inherit;
+            background-color: #ffffff;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            border-color: #a3bffa;
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(41, 82, 204, 0.1);
+        }
+
+        .contact-form select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath fill='%23495369' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            background-size: 10px 6px;
+        }
+
+        .contact-form textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+
+        .contact-form fieldset {
+            border: 1px solid #cbd5e1;
+            border-radius: 16px;
+            padding: 18px 20px;
+            background-color: #ffffff;
+        }
+
+        .contact-form legend {
+            font-weight: 700;
+            color: #1f2d5d;
+            padding: 0 8px;
+        }
+
+        .contact-form .options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 10px;
+        }
+
+        .contact-form .options label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 14px;
+            cursor: pointer;
+            background-color: #f8fbff;
+        }
+
+        .contact-form .options input {
+            accent-color: #2952cc;
+        }
+
+        .contact-form button {
+            width: max-content;
+            background-color: #2952cc;
+            color: white;
+            padding: 14px 26px;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.25s ease, transform 0.2s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #163172;
+            transform: translateY(-1px);
+        }
+
+        .contact-form button:focus-visible {
+            outline: 3px solid rgba(41, 82, 204, 0.3);
+            outline-offset: 2px;
+        }
+
+        code {
+            background-color: #eef2f7;
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+
+        mark {
+            background-color: #fff3a3;
+            padding: 2px 4px;
         }
 
         footer {
@@ -167,6 +344,18 @@
             main {
                 width: 92%;
             }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            .contact-form .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form button {
+                width: 100%;
+            }
         }
     </style>
 
@@ -174,91 +363,154 @@
 
 <body>
 
+    <!-- ENCABEZADO -->
     <header>
+
         <h1>Christian Erick Zavala Araujo</h1>
 
         <p>
-            Estudiante de Ingeniería en Sistemas con experiencia en desarrollo backend,
-            frontend y administración de bases de datos. 
+            Estudiante de Ingeniería en Sistemas con experiencia en
+            <strong>desarrollo backend</strong>,
+            frontend y administración de bases de datos.
         </p>
+
     </header>
 
-    <nav>
+    <!-- NAVEGACIÓN -->
+    <nav aria-label="Menú principal">
+
         <a href="#perfil">Perfil</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#educacion">Educación</a>
         <a href="#habilidades">Habilidades</a>
+        <a href="#tecnologias">Tecnologías</a>
         <a href="#contacto">Contacto</a>
+
     </nav>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
+        <!-- PERFIL -->
         <section id="perfil">
-           <h2>Perfil Profesional</h2>
 
-            <p>
-                Futuro ingeniero en sistemas con gran interés por el desarrollo de software,
-                la ciberseguridad, inteligencia artificial y gestión de proyectos tecnológicos.
-                Me caracterizo por mi compromiso, organización, creatividad y capacidad
-                para trabajar en equipo.
-            </p>
+            <article>
 
-            <p>
-                Busco fortalecer constantemente mis habilidades técnicas y personales
-                mediante el desarrollo de proyectos innovadores que generen impacto
-                y aporten soluciones eficientes.
-            </p>
+                <h2>Perfil Profesional</h2>
+
+                <p>
+                    Futuro ingeniero en sistemas con gran interés por el desarrollo de software,
+                    la ciberseguridad, <mark>inteligencia artificial</mark>
+                    y gestión de proyectos tecnológicos.
+                </p>
+
+                <p>
+                    Me caracterizo por mi compromiso, organización, creatividad
+                    y capacidad para trabajar en equipo.
+                </p>
+
+                <p>
+                    Busco fortalecer constantemente mis habilidades técnicas y personales
+                    mediante el desarrollo de proyectos innovadores.
+                </p>
+
+                <!-- PÁRRAFO CON URL -->
+                <p>
+                    Puede conocer más sobre mis proyectos y experiencia profesional en mi perfil de
+                    <a href="https://www.linkedin.com/in/christian-zavala-araujo-12205a333"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        LinkedIn
+                    </a>.
+                </p>
+
+                <!-- BLOCKQUOTE -->
+                <blockquote>
+                    "La tecnología y el aprendizaje continuo son la base de la innovación."
+                </blockquote>
+
+            </article>
+
         </section>
 
+        <!-- EXPERIENCIA -->
         <section id="experiencia">
+
             <h2>Experiencia Profesional</h2>
 
-            <h3>Agenda de Contactos - JavaFX</h3>
+            <ol>
 
-            <p>
-                Desarrollo de una aplicación de escritorio para la gestión dinámica
-                de contactos personales y empresariales utilizando JavaFX.
-                Implementación de programación orientada a objetos, listas dinámicas,
-                persistencia de datos y filtros de búsqueda.
-            </p>
+                <li>
+                    <article>
 
-            <h3>Sistema de Gestión de Retiros</h3>
+                        <h3>Agenda de Contactos - JavaFX</h3>
 
-            <p>
-                Diseño e implementación de un sistema basado en MySQL para la administración
-                de clientes, pagos y reservas. Aplicación de principios de normalización,
-                integridad referencial y optimización de consultas SQL.
-            </p>
+                        <p>
+                            Desarrollo de una aplicación utilizando
+                            <code>Java</code> y <code>JavaFX</code>
+                            para la gestión dinámica de contactos.
+                        </p>
 
-            <h3>Simulador Bancario</h3>
+                    </article>
+                </li>
 
-            <p>
-                Desarrollo de una aplicación backend basada en arquitectura MVC
-                para simular operaciones bancarias como depósitos, retiros,
-                transferencias y consultas de saldo.
-                Implementación de persistencia de datos con MySQL,
-                validaciones y lógica de negocio orientada a seguridad y escalabilidad.
-            </p>
+                <li>
+                    <article>
 
-            <h3>Modelos Predictivos IA</h3>
+                        <h3>Sistema de Gestión de Retiros</h3>
 
-            <p>
-                Proyecto desarrollado durante Samsung Innovation Campus enfocado
-                en Machine Learning y análisis de datos.
-                Realización de limpieza, transformación y procesamiento de información
-                para entrenar modelos predictivos e identificar patrones mediante IA.
-            </p>
+                        <p>
+                            Diseño e implementación de un sistema basado en
+                            <code>MySQL</code> para administración de clientes y pagos.
+                        </p>
+
+                    </article>
+                </li>
+
+                <li>
+                    <article>
+
+                        <h3>Simulador Bancario</h3>
+
+                        <p>
+                            Desarrollo backend basado en arquitectura MVC
+                            con persistencia de datos en <code>MySQL</code>.
+                        </p>
+
+                    </article>
+                </li>
+
+                <li>
+                    <article>
+
+                        <h3>Modelos Predictivos IA</h3>
+
+                        <p>
+                            Proyecto enfocado en <abbr title="Machine Learning">ML</abbr>
+                            y análisis de datos utilizando <code>Python</code>.
+                        </p>
+
+                    </article>
+                </li>
+
+            </ol>
 
         </section>
 
+        <!-- EDUCACIÓN -->
         <section id="educacion">
+
             <h2>Educación</h2>
 
             <ul>
 
                 <li>
                     <strong>Ingeniería en Sistemas</strong><br>
-                    Escuela Superior Politécnica del Litoral (ESPOL)
+                    Escuela Superior Politécnica del Litoral (ESPOL)<br>
+
+                    <time datetime="2022">
+                        Desde 2022
+                    </time>
                 </li>
 
                 <li>
@@ -275,48 +527,208 @@
 
         </section>
 
+        <!-- HABILIDADES -->
         <section id="habilidades">
-             <h2>Habilidades</h2>
 
-            <div class="skills-container">
+            <h2>Habilidades</h2>
 
-                <div class="skill">Backend</div>
-                <div class="skill">Frontend</div>
-                <div class="skill">MySQL</div>
-                <div class="skill">Java</div>
-                <div class="skill">JavaFX</div>
-                <div class="skill">Python</div>
-                <div class="skill">Machine Learning</div>
-                <div class="skill">HTML & CSS</div>
-                <div class="skill">Trabajo en Equipo</div>
-                <div class="skill">Comunicación</div>
-                <div class="skill">Resolución de Problemas</div>
+            <ul class="skills-container">
 
-            </div>
+                <li class="skill">Backend</li>
+                <li class="skill">Frontend</li>
+                <li class="skill">MySQL</li>
+                <li class="skill">Java</li>
+                <li class="skill">JavaFX</li>
+                <li class="skill">Python</li>
+                <li class="skill">Machine Learning</li>
+                <li class="skill">HTML & CSS</li>
+                <li class="skill">Trabajo en Equipo</li>
+                <li class="skill">Comunicación</li>
+                <li class="skill">Resolución de Problemas</li>
 
+            </ul>
+
+            <figure>
+                <iframe class="video-frame"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Video de habilidades"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <figcaption>Video de habilidades profesionales.</figcaption>
+            </figure>
 
         </section>
 
+        <!-- TABLA -->
+        <section id="tecnologias">
+
+            <h2>Tecnologías</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Tecnología</th>
+                        <th scope="col">Nivel</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th scope="row">Backend</th>
+                        <td>Java, Python</td>
+                        <td>Avanzado</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Frontend</th>
+                        <td>HTML/CSS</td>
+                        <td>Intermedio</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Base de Datos</th>
+                        <td>MySQL</td>
+                        <td>Intermedio</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- CONTACTO -->
         <section id="contacto">
+
             <h2>Contacto</h2>
 
-            <p><strong>Email:</strong> er.kj45@hotmail.com</p>
-            <p><strong>Teléfono:</strong> +593 968124200</p>
-            <p><strong>Ubicación:</strong> Guayaquil, Ecuador</p>
+            <address>
 
-            <p>
-                <strong>LinkedIn:</strong>
-                <a href="https://www.linkedin.com/in/christian-zavala-araujo-12205a333" target="_blank">
-                    linkedin.com/in/christian-zavala-araujo-12205a333
-                </a>
-            </p>
+                <p>
+                    <strong>Email:</strong>
+                    er.kj45@hotmail.com
+                </p>
+
+                <p>
+                    <strong>Teléfono:</strong>
+                    +593 968124200
+                </p>
+
+                <p>
+                    <strong>Ubicación:</strong>
+                    Guayaquil, Ecuador
+                </p>
+
+                <p>
+                    <strong>LinkedIn:</strong>
+
+                    <a href="https://www.linkedin.com/in/christian-zavala-araujo-12205a333"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        linkedin.com/in/christian-zavala-araujo-12205a333
+
+                    </a>
+
+                </p>
+
+            </address>
+
+            <form class="contact-form" action="#" method="post">
+                <p>Completa este formulario para recibir una recomendación sobre etiquetas HTML o solicitar una consulta rápida.</p>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="contact-name">Nombre</label>
+                        <input id="contact-name" name="name" type="text" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-email">Correo electrónico</label>
+                        <input id="contact-email" name="email" type="email" placeholder="tu@correo.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="contact-subject">Asunto</label>
+                        <input id="contact-subject" name="subject" type="text" placeholder="Asunto del mensaje" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-category">Categoría</label>
+                        <select id="contact-category" name="category" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="colaboracion">Colaboración</option>
+                            <option value="consultoria">Consultoría</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                </div>
+                <fieldset>
+                    <legend>¿Qué tipo de respuesta prefieres?</legend>
+                    <div class="options">
+                        <label for="pref-email">
+                            <input id="pref-email" name="response-preference" type="radio" value="email" required>
+                            Correo electrónico
+                        </label>
+                        <label for="pref-llamada">
+                            <input id="pref-llamada" name="response-preference" type="radio" value="llamada">
+                            Llamada
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Temas de interés (selección múltiple)</legend>
+                    <div class="options">
+                        <label for="topic-backend">
+                            <input id="topic-backend" name="topics" type="checkbox" value="backend">
+                            Backend
+                        </label>
+                        <label for="topic-frontend">
+                            <input id="topic-frontend" name="topics" type="checkbox" value="frontend">
+                            Frontend
+                        </label>
+                        <label for="topic-machine-learning">
+                            <input id="topic-machine-learning" name="topics" type="checkbox" value="machine-learning">
+                            Machine Learning
+                        </label>
+                        <label for="topic-bases-de-datos">
+                            <input id="topic-bases-de-datos" name="topics" type="checkbox" value="bases-de-datos">
+                            Bases de datos
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-field">
+                    <label for="contact-message">Mensaje</label>
+                    <textarea id="contact-message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+            <figure>
+                <iframe class="map-frame"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-79.9691%2C-2.2168%2C-79.8437%2C-2.0740&amp;layer=mapnik"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    aria-label="Mapa de Guayaquil, Ecuador">
+                </iframe>
+                <figcaption>Mapa interactivo de Guayaquil, Ecuador.</figcaption>
+            </figure>
 
         </section>
 
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer>
-        <p>&copy; 2026 Christian Erick Zavala Araujo | Curriculum Profesional</p>
+
+        <p>
+            &copy; 2026 Christian Erick Zavala Araujo | Curriculum Profesional
+        </p>
+
     </footer>
 
 </body>
